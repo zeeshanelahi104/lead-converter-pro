@@ -1,4 +1,14 @@
 Company Name,Contact First Name,Industry,Website,Email,Phone
-OpenAI,Sam,AI Technology,openai.com,sam@openai.com,+14155550101
-Tesla,Elon,Automotive,tesla.com,elon@tesla.com,+14155550102
-Stripe,Patrick,FinTech,stripe.com,patrick@stripe.com,+14155550103
+OpenAI,Sam,AI Technology,openai.com,sam@openai.com,14155550101
+Tesla,Elon,Automotive,tesla.com,elon@tesla.com,14155550102
+Stripe,Patrick,FinTech,stripe.com,patrick@stripe.com,14155550103
+Shopify,Tobi,E-Commerce,shopify.com,tobi@shopify.com,14155550104
+Notion,Ivan,Productivity Software,notion.so,ivan@notion.so,14155550105
+Mailchimp,Ben,Marketing Software,mailchimp.com,ben@mailchimp.com,14155550106
+Basecamp,Jason,Project Management,basecamp.com,jason@basecamp.com,14155550107
+Trello,Michael,Productivity Software,trello.com,michael@trello.com,14155550108
+Buffer,Joel,Social Media,buffer.com,joel@buffer.com,14155550109
+Zapier,Wade,Automation Software,zapier.com,wade@zapier.com,14155550110
+NoWebsiteCo,Alex,Consulting,,alex@nowebsiteco.com,14155550111
+BadDomainInc,Jamie,Retail,this-domain-does-not-exist-xyz123.com,jamie@baddomaininc.com,14155550112
+NoContactCo,Taylor,Logistics,fedex.com,,

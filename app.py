@@ -295,12 +295,12 @@ if uploaded_file is not None:
 
     st.success(f"✅ CSV loaded successfully! {len(df)} leads found.")
     
-    with st.expander("📊 Preview your data"):
-        st.dataframe(df.head(3))
+    with st.expander("📊 Preview your data", expanded=True):
+        st.dataframe(df)
     
     # The big "START" button
     if st.button("🔥 Generate Icebreakers for ALL Leads", type="primary"):
-        progress_bar = st.progress(0)
+        progress_bar = st.progress(0, text="0%")
         status_text = st.empty()
         
         # Add new columns for icebreakers (keep ALL existing columns)
@@ -312,7 +312,7 @@ if uploaded_file is not None:
         total_leads = len(df)
         
         for index, row in df.iterrows():
-            status_text.text(f"Processing {row['Contact First Name']} from {row['Company Name']}... ({index+1}/{total_leads})")
+            status_text.text(f"Processing {row['Contact First Name']} from {row['Company Name']}... ({index+1}/{total_leads} — {int((index / total_leads) * 100)}%)")
             
             scraped_text = scrape_website_text(row['Website'])
             df.at[index, 'Website_Scraped_Text'] = scraped_text
@@ -338,9 +338,10 @@ if uploaded_file is not None:
                 df.at[index, 'Icebreaker_2'] = "Scrape failed - check URL"
                 df.at[index, 'Icebreaker_3'] = "Scrape failed - check URL"
             
-            progress_bar.progress((index + 1) / total_leads)
+            percent_complete = (index + 1) / total_leads
+            progress_bar.progress(percent_complete, text=f"{int(percent_complete * 100)}%")
             time.sleep(0.5)
-        
+
         status_text.text("✅ Processing Complete!")
         
         st.subheader("📊 Your Enhanced Lead List")
