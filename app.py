@@ -363,7 +363,7 @@ if uploaded_file is not None:
 # ---------- FOOTER ----------
 st.markdown("""
 <div class="footer">
-    <p>🚀 Built with ❤️ by Zeeshan Elahi | Software Engineer | MERN Stack Developer | AI Automation Engineer</p>
+    <p>🚀 Built by Zeeshan Elahi | Software Engineer | MERN Stack Developer | AI Automation Engineer</p>
     <p style="font-size: 0.9rem;">
         📧 <a href="mailto:zeeshanelahi104@gmail.com">zeeshanelahi104@gmail.com</a> | 
         🔗 <a href="https://www.linkedin.com/in/zeeshan-elahi-818zl942" target="_blank">LinkedIn</a> | 

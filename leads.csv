@@ -1,4 +1,4 @@
-Company Name,Contact First Name,Industry,Website
-OpenAI,Sam,AI Technology,openai.com
-Tesla,Elon,Automotive,tesla.com
-Stripe,Patrick,FinTech,stripe.com
+Company Name,Contact First Name,Industry,Website,Email,Phone
+OpenAI,Sam,AI Technology,openai.com,sam@openai.com,+14155550101
+Tesla,Elon,Automotive,tesla.com,elon@tesla.com,+14155550102
+Stripe,Patrick,FinTech,stripe.com,patrick@stripe.com,+14155550103
