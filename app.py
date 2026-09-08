@@ -185,6 +185,3 @@ if uploaded_file is not None:
         
         st.balloons()
         st.success("🎉 Done! Upload this CSV to GoHighLevel and start your campaign.")
-
-# st.markdown("---")
-# st.caption("Built with ❤️ using Streamlit + OpenAI | Your personal AI Automation Agency Starter")
